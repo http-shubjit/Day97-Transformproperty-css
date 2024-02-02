@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body,
+      html {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .square {
+        height: 100px;
+        width: 100px;
+        background: #000;
+        margin: 10px;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .square:nth-child(1):hover {
+        transform: scale(1.6);
+        background: green;
+      }
+
+      .square:nth-child(2):hover {
+        transform: rotate(-30deg);
+        background: rgb(9, 31, 155);
+      }
+
+      .square:nth-child(3):hover {
+        transform: rotate(50deg);
+        background: rgb(32, 194, 209);
+      }
+
+      .square:nth-child(4):hover {
+        transform: scalex(0.5);
+        background: rgb(216, 121, 12);
+      }
+
+      .square:nth-child(5):hover {
+        transform: translateX(45px);
+        background: rgb(166, 10, 101);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </body>
+</html>
